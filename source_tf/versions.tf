@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Fabric release: v35.0.0
+
 
 terraform {
   required_version = ">= 1.1.0"

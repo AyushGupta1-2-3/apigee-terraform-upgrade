@@ -63,5 +63,5 @@ exposure_subnets = [
 peering_range = "10.0.0.0/22"
 support_range = "10.1.0.0/28"
 
-svc_prj_id="APIGEE_PROJECT_ID"
-project_id="SHARED_NETWORK_PROJECT_ID"
+svc_prj_id="is-apgx-tf-01"
+project_id="is-network-tf-01"
