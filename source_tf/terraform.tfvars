@@ -25,6 +25,13 @@ apigee_instances = {
   }
 }
 
+
+apigee_environments = [
+  "test1",
+  "test2"
+] # List of Apigee Environment names.
+
+/*
 apigee_environments = {
   test1 = {
     display_name = "Test 1"
@@ -41,6 +48,8 @@ apigee_environments = {
     envgroups    = ["test"]
   }
 }
+*/
+
 
 apigee_envgroups = {
   test = {

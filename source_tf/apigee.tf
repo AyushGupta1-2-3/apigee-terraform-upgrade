@@ -30,7 +30,8 @@ module "nip-development-hostname" {
 }
 
 module "apigee-x-core" {
-  source              = "./modules/apigee-x-core"
+  source              = "github.com/apigee/terraform-modules/modules/apigee-x-core?ref=v0.12.0"
+  # source              = "./modules/apigee-x-core"
   project_id          = module.service-project.project_id
   ax_region           = var.ax_region
   apigee_environments = var.apigee_environments
