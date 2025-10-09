@@ -1,0 +1,35 @@
+ax_region = "europe-west1"
+
+apigee_environments = ["test1", "test2"]
+
+apigee_instances = {
+  euw1-instance = {
+    region       = "europe-west1"
+    ip_range     = "10.0.0.0/22"
+    environments = ["test1", "test2"]
+  }
+}
+
+apigee_envgroups = {
+  test = {
+    environments = ["test1", "test2"]
+    hostnames    = ["test.api.example.com"]
+  }
+}
+
+network = "apigee-network"
+
+exposure_subnets = [
+  {
+    name               = "apigee-exposure"
+    ip_cidr_range      = "10.100.0.0/24"
+    region             = "europe-west1"
+    secondary_ip_range = null
+  }
+]
+
+peering_range = "10.0.0.0/22"
+support_range = "10.1.0.0/28"
+
+project_id           = "<NETWORK_GCP_PROJECT_ID>"
+svpc_host_project_id = "<APIGEE_GCP_PROJECT_ID>"
