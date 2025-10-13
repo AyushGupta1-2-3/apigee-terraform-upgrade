@@ -1,0 +1,44 @@
+ax_region = "europe-west1"
+
+apigee_environments = ["test1", "test2"]
+
+apigee_instances = {
+  euw1-instance = {
+    region       = "europe-west1"
+    ip_range     = "10.0.0.0/22"
+    environments = ["test1", "test2"]
+  }
+}
+
+apigee_envgroups = {
+  test = {
+    environments = ["test1", "test2"]
+    hostnames    = ["test.api.example.com"]
+  }
+}
+
+network = "apigee-network"
+
+exposure_subnets = [
+  {
+    name               = "apigee-exposure"
+    ip_cidr_range      = "10.100.0.0/24"
+    region             = "europe-west1"
+    secondary_ip_range = null
+  }
+]
+
+
+
+vpc_psa_config_ranges = { 
+  apigee-range  = "10.0.0.0/22"
+  apigee-support-range = "10.1.0.0/28"
+}
+
+
+
+project_id           = "is-network-tf-02"
+svpc_host_project_id = "is-apgx-tf-02"
+
+project_number  = 406386853263
+svc_prj_number  = 373641585915
