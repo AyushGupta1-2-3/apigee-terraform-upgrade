@@ -31,5 +31,6 @@ exposure_subnets = [
 peering_range = "10.0.0.0/22"
 support_range = "10.1.0.0/28"
 
-project_id           = "<NETWORK_GCP_PROJECT_ID>"
-svpc_host_project_id = "<APIGEE_GCP_PROJECT_ID>"
+project_id           = "is-network-tf-02"
+svpc_host_project_id = "is-apgx-tf-02"
+
